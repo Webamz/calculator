@@ -1,0 +1,178 @@
+body {
+    background-color: #2e8b57;
+}
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1b100ad5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#calculator {
+    display: grid;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    border: 3px solid #23262e57;
+    border-radius: 10px;
+    padding: 10px;
+
+    grid-template-areas:
+        "input input input input"
+        "clear clear backspace equals"
+        "seven eight nine divide"
+        "four five six multiply"
+        "one two three minus"
+        "zero zero decimal plus";
+
+    box-shadow: 0px 0px 20px;
+}
+
+#inputArea {
+    display: grid;
+    justify-items: end;
+    grid-area: input;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f8e9de;
+}
+
+#history {
+    padding-right: 5px;
+    padding-top: 5px;
+    font-size: 12px;
+    color: rgba(37, 37, 37, 0.9);
+}
+
+#current {
+    padding-right: 5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#backspace {
+    grid-area: backspace;
+}
+
+#backspace img {
+    width: 25px;
+    padding-top: 5px;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#equals {
+    grid-area: equals;
+    background-color: #a7754df1;
+}
+
+#equals:hover {
+    background-color: #9e6e49f1;
+}
+
+
+.number-button {
+    color: white;
+    background-color: rgba(37, 37, 37, 0.315);
+    font-size: 20px;
+
+    border-radius: 5px;
+    border: 1px solid rgba(37, 37, 37, 0.4);
+}
+
+.number-button:hover {
+    background-color: rgba(37, 37, 37, 0.575);
+}
+
+.arithmetic-button {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(37, 37, 37, 0.575);
+
+    border-radius: 5px;
+    border: 1px solid rgba(37, 37, 37, 0.4);
+}
+
+.arithmetic-button:hover {
+    background-color: rgba(37, 37, 37, 0.45);
+}
+
+.other-button {
+    font-size: 20px;
+    color: white;
+    background-color: #a7754df1;
+
+    border-radius: 5px;
+    border: 1px solid rgba(37, 37, 37, 0.4);
+}
+
+.other-button:hover {
+    background-color: #966845f1;
+}
